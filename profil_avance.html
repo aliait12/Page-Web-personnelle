@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>PAGE WEB PERSONNELLE</title>
+</head>
+<body>
+ <h1>AITOUIAZZANE Ali</h1>
+ <section>
+  <h2>A propos de mois</h2>
+  <p>Je m'appelle Aliaitouiazzane, j'ai 21 ans et je viens de Casablanca. 
+   'ai obtenu un baccalauréat technique en électricité,
+    ce qui m'a permis de développer une solide base en ingénierie et en systèmes techniques.
+
+   Par la suite, j'ai poursuivi mes études pendant deux ans dans un BTS en développement 
+   de systèmes d'information, où j'ai acquis des compétences en programmation,
+    gestion de bases de données, et analyse des systèmes.
+   
+   Actuellement, je suis en troisième année à l'École Marocaine des Sciences de l'Ingénieur (EMSI),
+    dans la filière Informatique et Réseaux. 
+    Cette formation me permet d'approfondir mes connaissances en développement logiciel,
+     réseaux, et systèmes informatiques.
+   
+   Je suis passionné par la technologie , 
+   et mon objectif est de contribuer à des projets innovants dans ce domaine.
+    À long terme, je souhaite devenir un expert en développement de systèmes 
+    et en gestion des réseaux informatiques.</p>
+
+    <img src="WhatsApp Image 2024-07-06 at 01.11.59 (1).jpeg" alt="image" width="350px">
+ </section>
+
+ <section>
+  <h2>Mes hobbies :</h2>
+  <ul>
+      <li>Programmation</li>
+      <li>Football</li>
+      <li>Lecture de livres techniques</li>
+      <li>Jeux vidéo</li>
+      <li>Randonnées</li>
+  </ul>
+
+  <h2>Mes objectifs cette année :</h2>
+  <ol>
+      <li>Obtenir mon diplôme en Informatique et Réseaux à l'EMSI.</li>
+      <li>Approfondir mes compétences en C++ et en développement de systèmes.</li>
+      <li>Réaliser un projet technique (PFA).</li>
+      <li>Développer mes connaissances en Réseaux.</li>
+      <li>Acquérir une expérience professionnelle en stage (projet de stage).</li>
+  </ol>
+</section>
+
+<section>
+<table border="1px">
+ <tr>
+<th>Nom</th>
+<th>Age</th>
+<th>Ville</th>
+<th>lien vers profil</th>
+ </tr>
+ <tr>
+  <th>Chouikh Majda</th>
+  <th>20</th>
+  <th>CASABLANCA</th>
+  <th><a href="https://www.instagram.com/ck_majda/?utm_source=ig_web_button_share_sheet">lien Instagram</a></th>
+ </tr>
+ <tr>
+  <th>Benali</th>
+  <th>20</th>
+  <th>CASABLANCA</th>
+  <th><a href="https://www.instagram.com/hafsa_benali1/?utm_source=ig_web_button_share_sheet">lien Instagram</a></th>
+ </tr>
+ <th>mohamedbenhadar</th>
+  <th>21</th>
+  <th>CASABLANCA</th>
+  <th><a href="https://www.instagram.com/mohamedbenhadar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">lien Instagram</a></th>
+ </tr>
+
+</table>
+
+
+</section>
+<form id="monFormulaire" action="" onsubmit="return validerFormulaire()">
+ Nom : <input type="text" id="nom" required><br><br>
+ Email : <input type="email" id="email" required><br><br>
+ Message : <textarea id="message" rows="5" cols="50" required></textarea><br><br>
+ <button type="submit">Soumettre</button>
+</form>
+
+<p id="erreurMessage" style="color:red;"></p>
+
+<script>
+function validerFormulaire() {
+
+ let nom = document.getElementById("nom").value;
+ let email = document.getElementById("email").value;
+ let message = document.getElementById("message").value;
+ let erreurMessage = document.getElementById("erreurMessage");
+
+ 
+ if (nom === "" || email === "" || message === "") {
+     erreurMessage.innerText = "Tous les champs doivent être remplis.";
+     return false;
+ }
+
+
+ let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ if (!emailRegex.test(email)) {
+     erreurMessage.innerText = "Veuillez entrer une adresse e-mail valide.";
+     return false;
+ }
+
+
+ erreurMessage.innerText = "";
+ alert("Formulaire soumis avec succès !");
+ return true;
+}
+</script>
+ 
+</body>
+</html>

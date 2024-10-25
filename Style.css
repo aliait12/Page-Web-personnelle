@@ -1,0 +1,145 @@
+
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f4f4f9;
+ color: #333;
+}
+
+
+h1 {
+ text-align: center;
+ color: #333;
+ margin-top: 20px;
+}
+
+
+section {
+ margin: 20px auto;
+ max-width: 800px;
+ padding: 20px;
+ background-color: #fff;
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+ color: #444;
+ border-bottom: 2px solid #5d6d7e;
+ padding-bottom: 5px;
+}
+
+
+p {
+ line-height: 1.6;
+ color: #555;
+}
+
+/* Image */
+img {
+ display: block;
+ margin: 10px auto;
+ border-radius: 8px;
+ width: 100%; 
+ max-width: 350px;
+}
+
+
+ul, ol {
+ margin-left: 20px;
+ color: #333;
+}
+
+
+table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 20px;
+ text-align: left;
+}
+
+th, td {
+ padding: 10px;
+ border: 1px solid #ddd;
+}
+
+th {
+ background-color: #5d6d7e;
+ color: #fff;
+}
+
+
+a {
+ color: #2980b9;
+ text-decoration: none;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+/* Formulaire */
+form {
+ max-width: 600px;
+ margin: 20px auto;
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+ width: calc(100% - 20px);
+ padding: 10px;
+ margin-bottom: 10px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+}
+
+form button {
+ padding: 10px 20px;
+ background-color: #2980b9;
+ color: #fff;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+form button:hover {
+ background-color: #1f618d;
+}
+
+
+#erreurMessage {
+ text-align: center;
+ font-size: 14px;
+}
+
+
+@media screen and (max-width: 799px) {
+ body {
+     padding: 0 10px;
+ }
+
+ h1 {
+     font-size: 1.8em;
+ }
+
+ section {
+     max-width: 100%;
+     padding: 15px;
+ }
+
+ form {
+     max-width: 100%;
+     padding: 15px;
+ }
+
+ table, th, td {
+     font-size: 0.9em;
+ }
+}
